@@ -1,0 +1,18 @@
+.welcome-page {
+    text-align: center;
+    margin-top: 50vh;
+    font-size: 2em;
+    opacity: 0;
+    background-color: black;
+    color: white;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .welcome-page.flash {
+    opacity: 1;
+  }
+  .main_page{
+      background-color: black;
+  }
+  /* Add any other styling you need for your page */
+  
