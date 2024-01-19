@@ -1,0 +1,11 @@
+.employees_div{
+    height: 8vh;
+    width: 70vh;
+    border: 2px solid black;
+}
+.employees_div{
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,50%);
+    position: absolute; 
+}
