@@ -6,6 +6,7 @@ import { Route, Router, Routes } from 'react-router-dom';
 import EmployeeId from './components/Employee-ID/Employee_id';
 import EmployeesPage from './components/Employess_page/Employees_page';
 import Addtask from './components/Add task/Addtask';
+import ChallengeList from './components/Challenge_List/Challenge_list';
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <Route  path='/employee_id' element={<EmployeeId/>}></Route>
       <Route path='/employee_page' element={<EmployeesPage/>}></Route>
       <Route path='/addtask' element={<Addtask/>}></Route>
+      <Route path='/challengelist' element={<ChallengeList/>}></Route>
     </Routes>
     </div>
   );

@@ -10,14 +10,19 @@ const AddTask=()=>{
 navigate("/addtask")
 }
 
-const finaldata=JSON.parse(localStorage.getItem("employee_data")) || []
-console.log(finaldata)
+function handleskip(){
+    navigate("/challengelist")
+}
 
     return (
         <div className='employee_main_div'>
+        <h1>Create Your own Challenge</h1><br></br>
             <div className='employees_div'>
                 <FontAwesomeIcon  onClick={AddTask} style={{height:'8vh'}} icon={faPlus} />
-            </div>
+            </div><br/><br/><br/>   
+            <button className='skip' onClick={handleskip}>SKIP</button>
+              
+            
         </div>
     );
 }

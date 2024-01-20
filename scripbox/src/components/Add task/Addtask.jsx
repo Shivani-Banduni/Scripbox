@@ -1,9 +1,11 @@
 import React from 'react';
 import { useState } from 'react';
-import "../Add task/addtask.css"
+import "../Add task/addtask.css";
+import { v4 as uuidv4 } from 'uuid';
+import { useNavigate } from 'react-router-dom';
 const Addtask = () => {
-
-
+    const Id = uuidv4();
+    const navigate=useNavigate();
 
 
     const [title, setTitle] = useState('');
@@ -13,10 +15,6 @@ const Addtask = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
   
-      // Do something with the form data (e.g., send it to the server)
-      console.log('Title:', title);
-      console.log('Description:', description);
-      console.log('Tags:', tags);
   
       // Reset the form fields after submission if needed
       setTitle('');
@@ -24,20 +22,25 @@ const Addtask = () => {
       setTags('');
 
   // Get existing data from localStorage
-const existingData=localStorage.getItem(JSON.parse("employee_data"))
+const existingData=JSON.parse(localStorage.getItem("employee_data")) || []
   // Create new data object
   const newData = {
+      id:Id,
+      data:Date.now(),
+      upvote:0,
     title: title,
     description: description,
     tags: tags
   };
 
   // Push new data into existing data array
-  existingData.push(newData);
-
+  existingData.push({...newData});
+localStorage.setItem("employee_data",JSON.stringify(existingData))
   // Save the updated array back to localStorage
-  localStorage.setItem("employee_data", JSON.stringify(existingData));
-  
+  console.log(newData)
+
+  navigate("/challengelist")
+
     };
 
 

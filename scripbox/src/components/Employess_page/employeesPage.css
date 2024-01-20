@@ -1,11 +1,34 @@
+.employee_main_div{
+    border: 3px solid rgb(248, 236, 236);
+    overflow: scroll;
+
+
+}
+
 .employees_div{
+    height: 30vh;
+    width: 70vh;
+    border: 2px solid black;
+    margin-left: 35vh;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: gray;
+
+    /* left: 50%;
+    top: 40%;
+    transform: translate(-50%,50%);
+    position: absolute;  */
+}
+
+.employee{
     height: 8vh;
     width: 70vh;
     border: 2px solid black;
+    margin-bottom: 4vh;
+    margin-left: 35vh;
+    
 }
-.employees_div{
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%,50%);
-    position: absolute; 
+.employee span{
+    font-size: larger;
 }
