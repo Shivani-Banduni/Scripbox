@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Employess_page/employeesPage.css";
+import "./employeesPage.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';

@@ -4,7 +4,12 @@
 
 
 }
-
+h1{
+    margin-left: 30%;
+}
+button{
+    margin-left: 43%;
+}
 .employees_div{
     height: 30vh;
     width: 70vh;
@@ -32,3 +37,22 @@ background-color: gray;
 .employee span{
     font-size: larger;
 }
+
+
+@media only screen and (max-width: 1200px) {
+    /* Adjust styles for screens narrower than 620px */
+    .employees_div{
+        width: 80%;
+        margin-left: 10%;
+    }
+    button {
+        width: 30%;
+        height: 10%;
+        font-size:xx-small;
+        margin-left: 15%;
+    }
+    h1{
+        font-size: large;
+        margin-left: 15%;
+    }
+  }

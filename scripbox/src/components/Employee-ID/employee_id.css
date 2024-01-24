@@ -33,14 +33,16 @@ text-align: center;
 }
 button{
     height: 8vh;
-    width: 20vh;
+    width: 18vh;
     border-radius: 3vh;
     border: 4px solid rgb(57, 55, 55);
     font-size: x-large;
     background-color: rgb(222, 211, 211);
+
 }
 button{
     color: black;
+
 
 }
  h2{ 
@@ -49,3 +51,25 @@ button{
 }.main{
     border: 5px solid rgb(245, 242, 242);
 }
+#btnn{
+    border-radius: 3vh;
+}
+
+
+  
+@media only screen and (max-width: 620px) {
+    /* Adjust styles for screens narrower than 620px */
+    .main_id {
+      margin: 2vh 5vh;
+    }
+  
+    .main_id input {
+      width: 100%; /* Full width for smaller screens */
+      height: auto;
+    }
+  
+    button {
+      width: 100%;
+      height: auto; /* Full width for smaller screens */
+    }
+  }

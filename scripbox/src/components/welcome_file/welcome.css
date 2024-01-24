@@ -1,11 +1,13 @@
 .welcome-page {
     text-align: center;
-    margin-top: 50vh;
+    margin-top: 35vh;
     font-size: 2em;
     opacity: 0;
     background-color: black;
     color: white;
     transition: opacity 0.5s ease-in-out;
+    border: 20px solid rgb(251, 171, 171);
+    
   }
   
   .welcome-page.flash {

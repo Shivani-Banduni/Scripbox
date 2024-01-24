@@ -69,3 +69,46 @@ form{
     background-color: #45a049;
   }
   
+
+
+
+  @media only screen and (max-width: 820px) {
+   
+    form {
+      margin-left:20%;
+    }
+   button{
+     margin-left: 4%;
+   }
+  
+    input,
+    textarea,
+    button {
+      width: 80%;
+     /* Make input, textarea, and button full width for smaller screens */
+    }
+  }
+
+
+
+
+
+
+
+  @media only screen and (  max-width: 1020px) {
+    .employee_main_div {
+      margin: 2vh 2vh; /* Adjust margin for smaller screens */
+    }
+    
+    form {
+      /* margin-left: 0; */
+      width: 60%;
+      margin-left: 20%; /* Remove left margin for smaller screens */
+    }
+  
+    input,
+    textarea,
+    button {
+      width: 70%; /* Make input, textarea, and button full width for smaller screens */
+    }
+  }
